@@ -15,7 +15,44 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkcyan;
+  color: var(--background);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px;
+  background-color: var(--foreground);
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px;
+  background-color: #0a0a0a;
+  color: white
+}
+
+.App,
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
 }
